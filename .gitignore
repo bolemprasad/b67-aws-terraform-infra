@@ -1,0 +1,18 @@
+# Ignore all Terraform local cache directories
+**/.terraform/
+
+# Ignore state files (they contain sensitive info)
+**/*.tfstate
+**/*.tfstate.backup
+
+# Ignore variable files (can contain secrets like access keys or region info)
+**/*.tfvars
+
+# Ignore lock file if you don't want to pin provider versions (optional)
+.terraform.lock.hcl
+
+# Ignore execution plan files (if used)
+*.tfplan
+
+# Ignore crash logs (if any)
+crash.log
